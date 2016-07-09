@@ -6,7 +6,6 @@ from source.array_n_string import *
 
 
 class TestTwoSum(unittest.TestCase):
-
     def test_two_sum_001(self):
         numbers = [1, 2, 3, 4, 5]
         target = 8
@@ -26,7 +25,6 @@ class TestTwoSum(unittest.TestCase):
 
 
 class TestSortedTwoSum(unittest.TestCase):
-
     def test_sorted_two_sum_001(self):
         numbers = [1, 2, 3, 4, 5]
         target = 8
@@ -46,7 +44,6 @@ class TestSortedTwoSum(unittest.TestCase):
 
 
 class TestTwoSumClass(unittest.TestCase):
-
     def test_two_sum_class_001(self):
         t = TwoSumClass()
         t.add(1)
@@ -54,19 +51,19 @@ class TestTwoSumClass(unittest.TestCase):
         t.add(2)
         self.assertEqual(True, t.find(4), '1+3=4')
         self.assertEqual(False, t.find(7), 'no find 7')
-        
+
         t.add(4)
         self.assertEqual(True, t.find(7), '4+3=7')
         self.assertEqual(False, t.find(8), 'no find 8')
-        
+
         t.add(4)
         self.assertEqual(True, t.find(8), '4+4=8')
 
 
 class TestValidPalindrome(unittest.TestCase):
-    
-#     def terst_
+    #     def terst_
     pass
+
 
 if __name__ == "__main__":
     # import sys;sys.argv = ['', 'Test.testTwoSum']

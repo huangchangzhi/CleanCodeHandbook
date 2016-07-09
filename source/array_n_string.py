@@ -50,7 +50,6 @@ class TwoSum(object):
 
 
 class SortedTwoSum(object):
-
     def two_sum(self, numbers, target):
         length = len(numbers)
         begin = 0
@@ -67,7 +66,6 @@ class SortedTwoSum(object):
 
 
 class TwoSumClass(object):
-
     def __init__(self):
         self.dict = dict()
 
@@ -89,7 +87,6 @@ class TwoSumClass(object):
 
 
 class ValidPalindrome(object):
-
     def is_palindrome(self, s):
         begin = 0
         end = len(s) - 1
@@ -101,7 +98,7 @@ class ValidPalindrome(object):
 
             if s[begin].upper() != s[end].upper():
                 return False
-            
+
             begin = begin + 1
             end = end - 1
         else:
