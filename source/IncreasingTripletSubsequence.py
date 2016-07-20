@@ -62,3 +62,26 @@ class Solution(object):
                         min1 = min2
 
         return False
+
+
+import unittest
+
+
+class TestIncreasing(unittest.TestCase):
+    s = Solution()
+
+    def test_001(self):
+        self.assertTrue(self.s.increasingTriplet([1, 2, 3, 4, 5]))
+
+    def test_002(self):
+        self.assertFalse(self.s.increasingTriplet([5, 4, 3, 2, 1]))
+
+    def test_003(self):
+        self.assertTrue(self.s.increasingTriplet([6, 5, 4, 7, 5, 2, 7]))
+
+    def test_004(self):
+        self.assertTrue(self.s.increasingTriplet([6, 5, 4, 7, 5, 2, 3, 4]))
+
+
+if __name__ == '__main__':
+    unittest.main()
